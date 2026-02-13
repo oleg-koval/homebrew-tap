@@ -3,7 +3,7 @@ cask "promptctl" do
   name "promptctl"
   desc "CLI toolkit that transforms raw intent into structured, optimized prompts"
   homepage "https://prompt-ctl.com"
-  version "0.4.1"
+  version "0.4.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "promptctl" do
     on_intel do
       url "https://github.com/oleg-koval/promptctl/releases/download/v#{version}/promptctl_#{version}_Darwin_x86_64.tar.gz",
         verified: "github.com/oleg-koval/promptctl/"
-      sha256 "1ad0dc064aa8a0d5d15d018d1984951d789477f86e95989e7224f08633620ab0"
+      sha256 "3cbd5d0cde32699f096a055c6d29e53b16309f3accf47540dd520fce248bb1ed"
     end
     on_arm do
       url "https://github.com/oleg-koval/promptctl/releases/download/v#{version}/promptctl_#{version}_Darwin_arm64.tar.gz",
         verified: "github.com/oleg-koval/promptctl/"
-      sha256 "1020162fa92419176eb4e7e8e9a4201076c0ebdef66a89ffa930726b9df8e837"
+      sha256 "5dd5a87d82b9837c32da461d11320dbda6a1371eb4f86197d0794bbac128f2c9"
     end
   end
 
@@ -28,12 +28,12 @@ cask "promptctl" do
     on_intel do
       url "https://github.com/oleg-koval/promptctl/releases/download/v#{version}/promptctl_#{version}_Linux_x86_64.tar.gz",
         verified: "github.com/oleg-koval/promptctl/"
-      sha256 "642c321168e00bc765e258dd95058fcf73d6226ac9d12edcb033e3472be7ba24"
+      sha256 "8182caa957bf7e84cd802deb6d5c33a1c3570b7cb583f01725fdf5cacb8d2bd6"
     end
     on_arm do
       url "https://github.com/oleg-koval/promptctl/releases/download/v#{version}/promptctl_#{version}_Linux_arm64.tar.gz",
         verified: "github.com/oleg-koval/promptctl/"
-      sha256 "11aead19e91286e7a88430eb8050c62a731b667b541add5cc8c59f1712c28503"
+      sha256 "6858b61e7e0cf60ba6728486baba7237d33b5dbe6bfb7c4872ce2e4b22e57353"
     end
   end
 
