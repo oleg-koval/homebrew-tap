@@ -5,21 +5,21 @@
 class Promptctl < Formula
   desc "CLI toolkit that transforms raw intent into structured, optimized prompts"
   homepage "https://prompt-ctl.com"
-  version "1.3.1"
+  version "1.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.1/promptctl_1.3.1_Darwin_x86_64.tar.gz"
-      sha256 "a08b34bc41860baae9c4c67c75be82a32ff4ba8c7d75f434aa31d1ef804e24a7"
+      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.3/promptctl_1.3.3_Darwin_x86_64.tar.gz"
+      sha256 "d57c9ccea7efe1a308d162f4740a25db20c7972f7cb6614103f81d7b5f7827da"
 
       define_method(:install) do
         bin.install "promptctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.1/promptctl_1.3.1_Darwin_arm64.tar.gz"
-      sha256 "619e5f3c36e3a0fb86ce56dc1d63fba33433543b0d906fc872bf2d6e6f92b14d"
+      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.3/promptctl_1.3.3_Darwin_arm64.tar.gz"
+      sha256 "004815abc5902cba96a505b66042e9849235ed9b9235977cc301ebf404c3d3cf"
 
       define_method(:install) do
         bin.install "promptctl"
@@ -29,15 +29,15 @@ class Promptctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.1/promptctl_1.3.1_Linux_x86_64.tar.gz"
-      sha256 "eb26fbd314f5cecf7b53746f59efb011678c8ebd1fdc994e5696ccce2de55e99"
+      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.3/promptctl_1.3.3_Linux_x86_64.tar.gz"
+      sha256 "97d854c29eba05ead0d6a9844221f5499a6fcea4b7f599222119e31f6667eab4"
       define_method(:install) do
         bin.install "promptctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.1/promptctl_1.3.1_Linux_arm64.tar.gz"
-      sha256 "60d613e05d2a8a0d8418f0cd2bbb9c0bec52d645f8518bc0f5bee97430e8725d"
+      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.3/promptctl_1.3.3_Linux_arm64.tar.gz"
+      sha256 "419354f012497d3103a5f944df5455cff1265c575c813e31c742fa29e9019ed3"
       define_method(:install) do
         bin.install "promptctl"
       end
