@@ -10,7 +10,7 @@ class Promptctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/prompt-ctl/promptctl/releases/download/v1.3.1/promptctl_1.3.1_Darwin_x86_64.tar.gz"
+      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.1/promptctl_1.3.1_Darwin_x86_64.tar.gz"
       sha256 "a08b34bc41860baae9c4c67c75be82a32ff4ba8c7d75f434aa31d1ef804e24a7"
 
       define_method(:install) do
@@ -18,7 +18,7 @@ class Promptctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/prompt-ctl/promptctl/releases/download/v1.3.1/promptctl_1.3.1_Darwin_arm64.tar.gz"
+      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.1/promptctl_1.3.1_Darwin_arm64.tar.gz"
       sha256 "619e5f3c36e3a0fb86ce56dc1d63fba33433543b0d906fc872bf2d6e6f92b14d"
 
       define_method(:install) do
@@ -29,14 +29,14 @@ class Promptctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/prompt-ctl/promptctl/releases/download/v1.3.1/promptctl_1.3.1_Linux_x86_64.tar.gz"
+      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.1/promptctl_1.3.1_Linux_x86_64.tar.gz"
       sha256 "eb26fbd314f5cecf7b53746f59efb011678c8ebd1fdc994e5696ccce2de55e99"
       define_method(:install) do
         bin.install "promptctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/prompt-ctl/promptctl/releases/download/v1.3.1/promptctl_1.3.1_Linux_arm64.tar.gz"
+      url "https://github.com/oleg-koval/promptctl-releases/releases/download/v1.3.1/promptctl_1.3.1_Linux_arm64.tar.gz"
       sha256 "60d613e05d2a8a0d8418f0cd2bbb9c0bec52d645f8518bc0f5bee97430e8725d"
       define_method(:install) do
         bin.install "promptctl"
