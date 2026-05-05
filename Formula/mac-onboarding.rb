@@ -1,15 +1,15 @@
 class MacOnboarding < Formula
   desc "Export macOS configs and settings, install on a new Mac without Time Machine"
   homepage "https://github.com/oleg-koval/mac-onboarding"
-  version "0.2.8"
+  version "0.2.9"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/oleg-koval/mac-onboarding/releases/download/v0.2.8/mac-onboarding-darwin-arm64"
-    sha256 "7cea68a33ca8f237fad61abea215a61903b761d159c9c7db2e9ad975d75a54b6"
+    url "https://github.com/oleg-koval/mac-onboarding/releases/download/v0.2.9/mac-onboarding-darwin-arm64"
+    sha256 "983dc5ee6f14b61466434a3d9c28bdd79c50939ea90bbef97b41b359f91a50ac"
   else
-    url "https://github.com/oleg-koval/mac-onboarding/releases/download/v0.2.8/mac-onboarding-darwin-amd64"
-    sha256 "417ac160686d873ee7f76343a2fd62be858ec6d1dd4844ffbbd5641c1f6b8cdb"
+    url "https://github.com/oleg-koval/mac-onboarding/releases/download/v0.2.9/mac-onboarding-darwin-amd64"
+    sha256 "2f6e45f8e994dd96f1a4fff96a0025e3d00bdd247ad41149e0f1cb92964c1ddc"
   end
 
   def install
