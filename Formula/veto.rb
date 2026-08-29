@@ -50,6 +50,8 @@ class Veto < Formula
     return unless OS.mac?
 
     executable = bin/"veto"
+    return unless quiet_system "/usr/bin/xattr", "-p", "com.apple.quarantine", executable
+
     executable.chmod 0755
     system "/usr/bin/xattr", "-d", "com.apple.quarantine", executable
     executable.chmod 0555
