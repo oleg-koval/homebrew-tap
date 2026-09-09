@@ -8,8 +8,8 @@ class Veto < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oleg-koval/veto/releases/download/v0.10.3/veto_0.10.3_darwin_amd64.tar.gz"
-      sha256 "ee41b0fdf4a3489865274c6c5948a640123fad699987410c34f3696ee5f82576"
+      url "https://github.com/oleg-koval/veto/releases/download/v0.10.4/veto_0.10.4_darwin_amd64.tar.gz"
+      sha256 "d0019b85644b0bce67c402619b8ec6415c9db05fd9b31efeb446e09bfa5dcd39"
 
       define_method(:install) do
         bin.install "veto"
@@ -17,8 +17,8 @@ class Veto < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/oleg-koval/veto/releases/download/v0.10.3/veto_0.10.3_darwin_arm64.tar.gz"
-      sha256 "1a991126b8bd4b760ad72e8fa3e7273390179b24f7d38ddf6e2543342e2c4d1d"
+      url "https://github.com/oleg-koval/veto/releases/download/v0.10.4/veto_0.10.4_darwin_arm64.tar.gz"
+      sha256 "0442e9935de38ef7b7f25721d6a74c67605478d8a854704383f36612d2d2bc44"
 
       define_method(:install) do
         bin.install "veto"
@@ -28,8 +28,8 @@ class Veto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oleg-koval/veto/releases/download/v0.10.3/veto_0.10.3_linux_amd64.tar.gz"
-      sha256 "85fb87c1063cec84821226729c51434f3773c13fbf3e68fe17c9677ac4242ec7"
+      url "https://github.com/oleg-koval/veto/releases/download/v0.10.4/veto_0.10.4_linux_amd64.tar.gz"
+      sha256 "02d3b83a25a90ae0911400052c3a85d1de0662697525b887d2d2849e62a3aedc"
 
       define_method(:install) do
         bin.install "veto"
@@ -37,8 +37,8 @@ class Veto < Formula
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oleg-koval/veto/releases/download/v0.10.3/veto_0.10.3_linux_arm64.tar.gz"
-      sha256 "47d6db8675f1b1e093ff38b5ea710a8cee6dc26f64f49b2222b92debf82e8dc9"
+      url "https://github.com/oleg-koval/veto/releases/download/v0.10.4/veto_0.10.4_linux_arm64.tar.gz"
+      sha256 "bab308113800c6663db44764a3be6935a6db59d97522df1e264ef461bb3e36b3"
 
       define_method(:install) do
         bin.install "veto"
